@@ -270,11 +270,12 @@ nav .navbar-nav {
 }
 .flickity_holder .carousel-cell .textholder .inner {
   background-color: #258EF6;
-  padding: 60px;
+  padding: 30px;
 }
 @media only screen and (min-width: 768px) {
   .flickity_holder .carousel-cell .textholder .inner {
     width: 480px;
+    padding: 60px;
   }
 }
 .flickity_holder .carousel-cell .textholder h2 {
