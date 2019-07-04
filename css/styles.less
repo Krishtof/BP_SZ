@@ -1,5 +1,6 @@
 @import "dimensions.less";
 
+
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -47,7 +48,7 @@ nav {
         height: 50px;
         background-repeat: no-repeat;
         background-size: contain;
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .navbar-collapse {
         justify-content: flex-end;
@@ -116,6 +117,14 @@ nav {
         cursor: pointer;
     }
 
+    h2 {
+        margin-left: -40px;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
     h2:after {
         content: url("../imgs/chevron_right.svg");
         margin-left: 10px;
@@ -127,18 +136,9 @@ nav {
         0% {
             right: -30px;
         }
-        80% {
-            right: -50px; 
-        }
-        85% {
-            right: -33px;
-        }
-        
-        90% {
-            right: -40px;
-        }
+
         100% {
-            right: -30px;
+            right: -50px;
         }
     }
 
@@ -311,13 +311,17 @@ padding: 70px 30px;
         .img-holder {
             width: 100%;
             max-width: 260px;
-            height: 420px;
+            height: 255px;
             background-color: red;
             margin: 15px;
             border-radius: 10px;
             background-position: center;
             background-repeat: no-repeat;
             background-image: url("../imgs/bringa.png");
+
+            @media @tablet {
+                height: 420px;
+            }
 
 
             &:nth-child(2) {
@@ -380,3 +384,4 @@ padding: 70px 30px;
         }
     }
 }
+

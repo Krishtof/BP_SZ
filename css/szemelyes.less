@@ -1,0 +1,190 @@
+@import "dimensions.less";
+@import "styles.less";
+
+
+.top_sub {
+    width: 100%;
+    background-image: url("../imgs/szem_top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    padding: 0 15px 50px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+
+    @media @desktop {
+        padding: 0 50px;
+    }
+    
+
+    .textholder {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%; 
+
+    @media @tablet {
+        margin-bottom: 110px;
+    }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h1, h4 {
+            text-align: center;
+            color: white;
+        }
+    }
+
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 15px;
+
+    @media @tablet {
+        flex-direction: row;
+        padding: 80px 50px;
+    }
+
+    .left {
+        width: 100%;
+
+        @media @desktop {
+            width: 30%;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media @desktop {
+            width: 70%;
+        }
+
+
+        .bevezeto {
+            margin-bottom: 30px;
+        }
+
+        .korszak {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-weight: 300;
+                font-size: 24px;
+            }
+        }
+
+    }
+}
+
+.moments {
+    background-color: #F2F5F6;
+    padding: 60px 15px;
+
+    @media @tablet {
+        padding: 80px 50px;
+    }
+
+    .moment-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+
+        @media @tablet {
+            flex-direction: row;
+        }
+
+        .text-holder {
+            color: white;
+            position: relative;
+            z-index: 100;
+
+            @media @tablet {
+                max-width: 530px;
+
+            }
+
+            .inner {
+                background-color: white;
+                padding: 30px;
+                color: black;
+
+
+                @media @tablet {
+                    width: 480px;
+                    padding: 60px;
+                    margin-right: -60px;
+                    z-index: 100;
+                    margin-top: 30px;
+                    border-radius: 4px;
+                }
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            &.csalad {
+                .inner {
+                    @media @tablet {
+                        margin-left: -60px;
+
+                    }
+                }
+            }
+        }   
+        .img-holder {
+            background-image: url("../imgs/futas.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 230px;
+            width: 100%;
+            background-position: center;
+
+            &.csalad {
+                background-image: url("../imgs/csalad.png");
+            }
+
+            &.nlg {
+                background-image: url("../imgs/nlg.png");
+            }
+
+            @media @tablet {
+                height: 460px;
+                max-width: 680px;
+            }
+        }
+    }
+}
+
+.quote {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+
+    @media @tablet {
+        padding: 80px 50px;
+    }
+}
