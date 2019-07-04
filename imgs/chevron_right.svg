@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="17px" viewBox="0 0 9 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-chevron-right - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-1175.000000, -564.000000)" fill="#FFFFFF">
+            <g id="Group-8" transform="translate(810.000000, 528.000000)">
+                <path d="M370.976562,44.25 L365.105469,38.1328125 C364.917968,37.9453116 364.917968,37.7578134 365.105469,37.5703125 L366.160156,36.515625 C366.371095,36.3281241 366.558593,36.3164054 366.722656,36.4804688 L373.894531,43.96875 C373.964844,44.0390629 374,44.1328119 374,44.25 C374,44.3671881 373.964844,44.4609371 373.894531,44.53125 L366.722656,52.0195312 C366.535155,52.2070322 366.347657,52.2070322 366.160156,52.0195312 L365.105469,50.9296875 C364.917968,50.7421866 364.917968,50.5546884 365.105469,50.3671875 L370.976562,44.25 Z" id="ion-chevron-right---Ionicons"></path>
+            </g>
+        </g>
+    </g>
+</svg>

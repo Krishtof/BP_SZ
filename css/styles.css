@@ -1,0 +1,435 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 57px;
+  text-decoration: underline;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 31px;
+}
+h4 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 400;
+}
+p {
+  font-family: 'Alice', serif;
+  font-size: 17px;
+}
+nav {
+  min-height: 70px;
+}
+nav .navbar-brand {
+  background-image: url("../imgs/balazsy_logo.png");
+  width: 72px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 50px;
+}
+nav .navbar-collapse {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+          justify-content: flex-end;
+}
+nav .navbar-collapse a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  text-transform: uppercase;
+}
+nav .navbar-nav {
+  margin-right: 0 !important;
+}
+.top {
+  width: 100%;
+  background-image: url("../imgs/cover_main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 590px;
+  padding: 0 15px 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+          align-items: flex-end;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (min-width: 1281px) {
+  .top {
+    padding: 0 50px;
+  }
+}
+.top .textholder {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+.top .textholder h1,
+.top .textholder h4 {
+  color: white;
+}
+.top .parallelogram {
+  width: 340px;
+  height: 85px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background: #258EF6;
+  position: absolute;
+  right: -30px;
+  bottom: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+@media only screen and (min-width: 1281px) {
+  .top .parallelogram {
+    width: 430px;
+  }
+}
+.top .parallelogram:hover {
+  -webkit-animation: bounce 0.7s;
+          animation: bounce 0.7s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: once;
+          animation-iteration-count: once;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.top .parallelogram h2:after {
+  content: url("../imgs/chevron_right.svg");
+  margin-left: 10px;
+  top: 1px;
+  position: absolute;
+}
+@-webkit-keyframes bounce {
+  0% {
+    right: -30px;
+  }
+  80% {
+    right: -50px;
+  }
+  85% {
+    right: -33px;
+  }
+  90% {
+    right: -40px;
+  }
+  100% {
+    right: -30px;
+  }
+}
+@keyframes bounce {
+  0% {
+    right: -30px;
+  }
+  80% {
+    right: -50px;
+  }
+  85% {
+    right: -33px;
+  }
+  90% {
+    right: -40px;
+  }
+  100% {
+    right: -30px;
+  }
+}
+.top .parallelogram h2 {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.quote_section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  padding: 70px 30px;
+}
+@media only screen and (min-width: 768px) {
+  .quote_section {
+    padding: 70px 30px 120px;
+  }
+}
+.quote_section h2,
+.quote_section p {
+  max-width: 800px;
+  text-align: center;
+}
+.quote_section img {
+  margin-bottom: 30px;
+}
+.flickity_holder {
+  background-color: #F5F5F5;
+  padding: 70px 15px;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .flickity_holder {
+    padding: 120px 50px;
+  }
+}
+.flickity_holder:after {
+  content: "";
+  height: 841px;
+  width: 1588px;
+  display: block;
+  position: absolute;
+  left: -300px;
+  top: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/bg_decor_brand.svg");
+}
+.flickity_holder .main-carousel {
+  z-index: 10;
+}
+.flickity_holder h1 {
+  font-size: 38px;
+  margin-bottom: 100px;
+}
+.flickity_holder .carousel-cell {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .flickity_holder .carousel-cell {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+            flex-direction: row;
+  }
+}
+.flickity_holder .carousel-cell .textholder {
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .flickity_holder .carousel-cell .textholder {
+    max-width: 530px;
+  }
+}
+.flickity_holder .carousel-cell .textholder .inner {
+  background-color: #258EF6;
+  padding: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .flickity_holder .carousel-cell .textholder .inner {
+    width: 480px;
+  }
+}
+.flickity_holder .carousel-cell .textholder h2 {
+  font-size: 30px;
+}
+.flickity_holder .carousel-cell .img-holder {
+  background-image: url("../imgs/playground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 100%;
+  background-position: center;
+}
+@media only screen and (min-width: 768px) {
+  .flickity_holder .carousel-cell .img-holder {
+    height: 470px;
+    max-width: 440px;
+  }
+}
+.flickity_holder .flickity-prev-next-button.next {
+  position: absolute !important;
+  right: 0 !important;
+  top: -60px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.flickity_holder .flickity-prev-next-button.previous {
+  position: absolute !important;
+  right: 60px;
+  top: -60px;
+  left: inherit !important;
+  background: #FFFFFF;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.flickity_holder .flickity-page-dots {
+  display: none !important;
+}
+.uj-korszak {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+          flex-direction: row;
+  padding: 70px 15px;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .uj-korszak {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+            flex-direction: row;
+    padding: 120px 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .uj-korszak .left-text {
+    padding-top: 60px;
+  }
+}
+.uj-korszak .left-text h1 {
+  font-size: 38px;
+}
+.uj-korszak .left-text h1 span {
+  color: #258EF6;
+}
+.uj-korszak .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media only screen and (min-width: 768px) {
+  .uj-korszak .right {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.uj-korszak .right .img-holder {
+  width: 100%;
+  max-width: 260px;
+  height: 420px;
+  background-color: red;
+  margin: 15px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/bringa.png");
+}
+.uj-korszak .right .img-holder:nth-child(2) {
+  margin-top: 40px;
+  background-image: url("../imgs/beszed.png");
+}
+.uj-korszak .right .img-holder:nth-child(3) {
+  background-image: url("../imgs/atado.png");
+}
+.footer {
+  text-align: center;
+  background-color: #258EF6;
+  color: white;
+  padding: 80px 40px;
+}
+.footer h1 {
+  font-size: 38px;
+}
+.footer #mc_embed_signup {
+  background-color: #268df6;
+  max-width: 530px;
+  margin: 0 auto;
+}
+.footer .content__gdprBlock {
+  max-width: 530px !important;
+}
+.footer #mc_embed_signup .mc-field-group {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.footer #mc_embed_signup .mc-field-group {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.footer .content__gdpr h2 {
+  font-size: 15px !important;
+}
+.footer .content__gdpr .title {
+  font-size: 16px;
+}
+.footer .content__gdpr p {
+  font-size: 13px;
+}
+.footer .content__gdprLegal p,
+.footer .content__gdprLegal a {
+  font-size: 13px;
+  color: white;
+}
+.footer #mc_embed_signup .clear {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+}
+.footer #mc_embed_signup .clear .button {
+  background-color: black;
+}
