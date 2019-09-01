@@ -74,6 +74,7 @@ nav .navbar-nav {
   background-position: center;
   overflow: hidden;
   position: relative;
+  background-position-y: -90px;
 }
 @media only screen and (min-width: 1281px) {
   .top {
