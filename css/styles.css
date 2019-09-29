@@ -328,11 +328,9 @@ nav .navbar-nav {
     padding: 120px 50px;
   }
 }
-.uj-korszak .left-text {
-  max-width: 300px;
-}
 @media only screen and (min-width: 768px) {
   .uj-korszak .left-text {
+    max-width: 300px;
     padding-top: 60px;
     margin-right: 20px;
   }
